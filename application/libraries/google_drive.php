@@ -65,7 +65,6 @@ class google_drive {
     
     public function __construct($config = ['client_id'=>null, 'client_secret'=>null, 'redirect_uri'=>null]) {
         $this->CI =& get_instance();
-        $this->CI->load->library('curl');
         //print_r($config);
         $this->Scopes = [
             'https://www.googleapis.com/auth/drive',
